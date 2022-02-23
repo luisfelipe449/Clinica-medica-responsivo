@@ -14,13 +14,14 @@ header{
     display: flex;
     justify-content: space-between;
     background-color: rgb(9, 202, 202);
+    width: 100%;
 }
 
 header img{
     display: flex;
     align-items: center;
-    width: 80%;
-    padding-left: 5px;
+    width: 60%;
+    padding-left: 100px;
 }
 
 .navbar a{
@@ -35,7 +36,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-  
+    padding: 0 90px;
 }
 
 .banner{
@@ -241,6 +242,27 @@ table tbody tr:nth-of-type(2n+1) {
 }
 
 @media (max-width: 768px){
+
+    /* COMEÇO PÁGINA ESPECIALIDADES */
+    .espec-container{
+        padding: 0;
+        width: 100%;
+    }
+
+    .espec-container img{
+        display: none;
+    }
+
+    .espec-categoria table{
+        width: 90%;
+        margin: 0 auto;
+    }
+    /* FIM PÁGINA ESPECIALIDADES */
+
+    .navbar a{
+        font-size: 1.1rem;
+    }
+
     .aboutList img{
         display: none;
     }
@@ -265,16 +287,44 @@ table tbody tr:nth-of-type(2n+1) {
         padding-left: 50px;
     }
 }
-
+/* FIM PÁGINA ESPECIALIDADES */
 
 @media (max-width: 425px){
-    
+    /* COMEÇO PÁGINA ESPECIALIDADES */
+    .navbar2{
+        text-align: center;
+        line-height: 25px;
+    }
+
+    h2, p{
+        font-size: 1rem;
+    }
+
+    .titulo{
+        font-size: .85rem;
+    }
+
+    .espec-container{
+        padding: 0;
+        width: 100%;
+    }
+
+    .espec-container img{
+        display: none;
+    }
+
+    .espec-categoria table{
+        width: 100%;
+    }
+    /* FIM PÁGINA ESPECIALIDADES */
+
     
     header{
         flex-direction: column;
     }
 
     header img{
+        padding: 0;
         width: 40%;
         margin: 0 auto;
     }
@@ -285,9 +335,8 @@ table tbody tr:nth-of-type(2n+1) {
 
     nav{
         justify-content:space-around;
-        padding: 5px;
-      
         width: 100%;
+        padding: 0;
     }
 
     .banner{
