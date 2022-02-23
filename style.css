@@ -33,10 +33,13 @@ header img{
 
 nav{
     display: flex;
+    justify-content: center;
     align-items: center;
+  
 }
 
 .banner{
+    width: 100%;
     height: 400px;
     background-image: url('assets/recepcao.png');
     background-repeat:no-repeat;
@@ -138,12 +141,15 @@ h2,h3 {
 
 button{
       background-color: rgb(9, 202, 202);
-      color: white;
       padding: 15px;
       text-align: center;
       border: none;
       margin-top: 20px;
   }
+.botao a{
+    color: white;
+    text-decoration: none;
+}
 
 .contato{
     display: flex;
@@ -173,6 +179,66 @@ footer{
     line-height: 25px;
 }
 
+/* COMEÇO PÁGINA ESPECIALIDADES */
+
+.navbar2{
+    margin: 20px;
+}
+
+.navbar2 a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(31, 182, 174);
+    padding: 1px;
+}
+
+.titulo{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.descricao{
+    margin: auto;
+    text-align: center;
+    max-width: 500px;
+}
+
+table{
+    border-spacing: 0;
+    width: 60vw;
+}
+
+table th, table td  {
+    padding: 10px;
+  }
+
+table thead tr{
+    background-color: #00cad1;
+    color: #fff;
+    text-align: left;
+}
+
+table tbody tr:nth-of-type(2n+1) {
+    background-color: #cdcdcd;
+    border: 1px solid #f1f1f1;
+  }
+
+.espec-container{
+    padding: 0 50px;
+}
+
+.espec-categoria{
+    display: flex;
+    margin: 50px 0;
+    width: 100%;
+}
+
+.espec-categoria img{
+    width: 25%;
+}
 
 @media (max-width: 768px){
     .aboutList img{
